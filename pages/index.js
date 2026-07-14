@@ -5,15 +5,14 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    // For now, redirect to /login. Once auth hook is implemented, it will check session state.
     router.replace('/login');
   }, [router]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-slate-950">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-100 via-amber-50 to-emerald-50">
       <div className="text-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand-500 mx-auto"></div>
-        <p className="mt-4 text-slate-400 font-medium">Loading Kindergarten Dashboard...</p>
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-sky-500 mx-auto"></div>
+        <p className="mt-4 text-slate-500 font-bold">Loading Little Sprouts Dashboard...</p>
       </div>
     </div>
   );
