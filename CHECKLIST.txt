@@ -1,0 +1,62 @@
+# Kindergarten School Dashboard - Development Checklist
+
+## Phase 0 - Setup
+- [x] Initialize Next.js project
+- [x] Install dependencies (Firebase, Lucide React, etc.)
+- [x] Set up Firebase project config
+- [x] Create `.env.local` with Firebase credentials
+- [x] Create basic project structure & components skeleton
+- [x] Confirm setup and verify live build
+
+## Phase 1 - Authentication
+- [x] Create login page (email/password)
+- [x] Implement Firebase Authentication client functions
+- [x] Protect dashboard routes (Auth context + hook, redirect if not logged in)
+- [x] Add logout button
+- [x] Test login/logout flow
+
+## Phase 2 - Student Management (CRUD)
+- [x] Design Firestore student data schema
+- [x] Create students client-side services (CRUD)
+- [x] Build student list table component (with search & pagination)
+- [x] Build Add/Edit student form modal
+- [x] Build Delete confirmation dialog
+- [x] Test student CRUD operations
+
+## Phase 3 - Attendance
+- [x] Design Firestore attendance schema
+- [x] Create attendance client-side services (GET daily, batch POST, GET history)
+- [x] Build Daily Attendance tracking page (list, toggle present/absent, submit)
+- [x] Build Today's attendance summary cards for dashboard
+- [x] Build attendance history chart/table view per student
+- [x] Implement monthly summary report CSV export
+
+## Phase 4 - Daily Activities Log
+- [x] Design Firestore activities schema
+- [x] Create activity log services (POST activity, GET activities by date)
+- [x] Build activity input form (date, class group, content text area)
+- [x] Build activity feed component (chronological list)
+
+## Phase 5 - Dashboard Home
+- [x] Create dashboard homepage layout and navigation
+- [x] Fetch and display dashboard summary cards:
+  - [x] Total Students
+  - [x] Present Today
+  - [x] Absent Today
+  - [x] Upcoming Birthdays (next 7 days)
+- [x] Integrate attendance trend chart (last 7 days)
+
+## Phase 6 - Parent Communication (Bonus)
+- [x] Display parent contact details on student detail view
+- [x] Add simulate "Send Email" action (console.log + toast notification)
+
+## Phase 7 - Testing & Polish
+- [x] Form input validations (client-side)
+- [x] Handle loading and error states globally/per component
+- [x] Verify responsive layouts on desktop and tablet
+- [x] Add custom 404 page
+- [x] Code cleanup (remove unused logs/comments)
+
+## Phase 8 - Documentation & Setup
+- [x] Write README.md with setup and architecture details
+
